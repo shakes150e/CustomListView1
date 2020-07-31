@@ -35,7 +35,6 @@ public class myAdapter extends ArrayAdapter<String> {
         viewHolder mViewHolder = new viewHolder();
         if(convertView == null) {
             LayoutInflater mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            assert mInflater != null;
             convertView = mInflater.inflate(R.layout.listview_item, parent, false);
             mViewHolder.mFlag = (ImageView) convertView.findViewById(R.id.imageView2);
             mViewHolder. mName = (TextView) convertView.findViewById(R.id.textView);
